@@ -1,0 +1,11 @@
+alignfull
+alignwide
+alignnone
+aligncenter
+alignright
+wp-block-button
+wp-caption
+wp-caption-text
+hover:text-brand-gold
+hover:text-white
+hover:bg-brand-gold

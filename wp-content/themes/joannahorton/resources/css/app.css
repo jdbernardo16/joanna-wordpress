@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "./utilities.css";
+@import "./custom.css" layer(utilities);
+
+@source '../../vendor/tailpress/framework/**/*.php';
+@source '../../vendor/tailpress/framework/**/**/*.php';
+@source '../../template-parts/**/*.php';
+@source '../../*.php';
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-zinc-200, currentColor);
+    }
+
+    /* Apply fonts to elements */
+    html {
+        font-family: var(--font-body);
+    }
+
+    body {
+        font-family: var(--font-body);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        font-family: var(--font-heading);
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+}
+
+/* Hover utilities for brand colors */
+@layer utilities {
+    .hover\:text-brand-gold:hover {
+        color: var(--color-brand-gold);
+    }
+
+    .hover\:text-white:hover {
+        color: var(--color-white);
+    }
+
+    .hover\:bg-brand-gold:hover {
+        background-color: var(--color-brand-gold);
+    }
+}
