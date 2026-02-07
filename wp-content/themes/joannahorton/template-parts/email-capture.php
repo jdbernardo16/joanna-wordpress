@@ -31,9 +31,12 @@
 
                 <form
                     class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto mb-6"
-                    action="#"
+                    action="<?php echo esc_url(admin_url('admin-post.php')); ?>"
                     method="POST"
                 >
+                    <?php wp_nonce_field('email_subscribe_action', 'email_subscribe_nonce'); ?>
+                    <input type="hidden" name="action" value="email_subscribe">
+                    
                     <input
                         type="email"
                         name="email"
