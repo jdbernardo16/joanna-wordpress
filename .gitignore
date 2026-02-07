@@ -1,0 +1,74 @@
+# WordPress Core
+wp-admin/
+wp-includes/
+wp-*.php
+license.txt
+readme.html
+
+# WordPress Configuration
+wp-config.php
+
+# WordPress Content - Uploads
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+
+# WordPress Content - Plugins (except custom ones)
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
+
+# WordPress Content - Themes (except custom theme)
+wp-content/themes/index.php
+wp-content/themes/twenty*/
+
+# Custom Theme - Build artifacts
+wp-content/themes/joannahorton/node_modules/
+wp-content/themes/joannahorton/vendor/
+wp-content/themes/joannahorton/dist-package/
+wp-content/themes/joannahorton/joannahorton-theme.zip
+
+# Custom Theme - Build output
+wp-content/themes/joannahorton/dist/
+wp-content/themes/joannahorton/build/
+
+# Composer
+composer.lock
+composer.phar
+
+# npm
+node_modules/
+npm-debug.log
+package-lock.json
+yarn-error.log
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
